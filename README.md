@@ -48,9 +48,11 @@ This tells Traktor to send track info to the app.
 | Password | `traktor123` |
 | Format | `Ogg Vorbis, 44100 Hz` |
 
-*  NOTE: The password can actually be anything — the server accepts any value — so users who already have something set in Traktor's Broadcasting preferences don't need to change it.
- 
+
 5. Click **Apply** and close Preferences
+
+*  NOTE: The password can actually be anything — the server accepts any value — so users who already have something set in Traktor's Broadcasting preferences don't need to change it.
+
 ### Step 3 — Get a YouTube API Key (free)
 The app needs this to search YouTube. You only do this once.
  
