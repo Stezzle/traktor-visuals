@@ -136,7 +136,7 @@ Each new track gets a random full-screen entrance animation:
  
 ## Roadmap
  
-✅ Windows `.exe` release
+✅ Windows `.exe` release - [Download Here](https://github.com/Stezzle/traktor-visuals/releases/download/v1.0.0/traktor-visuals.exe)
 - [ ] Android TV app (display client over local network)
 - [ ] Crossfader sync via MIDI
 - [ ] Manual video override / search
