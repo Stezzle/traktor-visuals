@@ -136,7 +136,7 @@ Each new track gets a random full-screen entrance animation:
  
 ## Roadmap
  
-- [ ] Windows `.exe` release
+✅ Windows `.exe` release
 - [ ] Android TV app (display client over local network)
 - [ ] Crossfader sync via MIDI
 - [ ] Manual video override / search
