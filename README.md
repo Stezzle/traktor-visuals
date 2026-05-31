@@ -16,7 +16,7 @@ matched video in a browser with animated transitions.
 
 ### 1. Traktor
 - Open Traktor → Preferences → Broadcasting
-- Set Address: 127.0.0.1, Port: 8000, Mount: /, Password: hackme
+- Set Address: 127.0.0.1, Port: 8000, Mount: /, Password: putanythinghere
 - Format: Ogg Vorbis, 44100 Hz
 
 ### 2. YouTube API Key (free)
