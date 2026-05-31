@@ -5,7 +5,7 @@ you're playing in Traktor DJ — with animated split-screen transitions
 as you mix between tracks.
 
 ## Demo
-[screenshot or gif here]
+![Screenshot](https://github.com/Stezzle/traktor-visuals/blob/main/2026-05-31%2011_44_04-.png?raw=true "Screenshot")
 
 ## How it works
 Traktor broadcasts track metadata over a local Icecast stream.
