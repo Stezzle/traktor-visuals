@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.TraktorVisuals" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">#e84393</item>
+        <item name="colorPrimaryVariant">#c026d3</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="android:windowBackground">#050505</item>
+        <item name="android:statusBarColor">#000000</item>
+        <item name="android:navigationBarColor">#000000</item>
+        <!-- True fullscreen — hide status and nav bar -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+    </style>
+</resources>
