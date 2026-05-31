@@ -38,6 +38,8 @@ This tells Traktor to send track info to the app.
 2. Go to **Preferences** (cog icon, top right)
 3. Click **Broadcasting** in the left sidebar
 4. Fill in these exact values:
+
+
 | Field | Value |
 |---|---|
 | Address | `127.0.0.1` |
