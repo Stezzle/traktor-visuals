@@ -736,8 +736,23 @@ async function main(){
   API_KEY=await loadApiKey();
   icecast.listen(ICECAST_PORT,'127.0.0.1',()=>log(G,'ICE  ',`Listening for Traktor on port ${ICECAST_PORT}`));
   webServer.listen(SERVER_PORT,()=>{
+    // Print local IP so user knows what to type into Android app
+    const os=require('os');
+    const localIp=Object.values(os.networkInterfaces())
+      .flat().find(i=>i.family==='IPv4'&&!i.internal)?.address||'localhost';
     log(G,'HTTP ',`Browser at http://localhost:${SERVER_PORT}`);
-    console.log(`\n  ${B}→ Open http://localhost:${SERVER_PORT}${R}\n`);
+    log(G,'NET  ',`On your network: http://${localIp}:${SERVER_PORT}`);
+    console.log(`\n  ${B}→ Browser: http://localhost:${SERVER_PORT}${R}`);
+    console.log(`  ${B}→ Android TV: http://${localIp}:${SERVER_PORT}${R}\n`);
+    // Advertise on local network via mDNS so Android app can auto-discover
+    try {
+      const bonjour=require('bonjour')();
+      bonjour.publish({name:'TraktorVisuals',type:'http',port:SERVER_PORT});
+      log(G,'MDNS ','Advertised on local network (Android Scan will find this)');
+    } catch(_){
+      log(Y,'MDNS ','bonjour not installed — Scan button won\'t work');
+      log(Y,'MDNS ','Run: npm install bonjour  to enable auto-discovery');
+    }
   });
 }
 main();
